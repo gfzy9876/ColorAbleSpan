@@ -14,17 +14,21 @@ import androidx.core.text.toSpannable
  * author zy
  * Have a nice day :)
  **/
-class ColorableTextView(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
+class ColorAbleTextView(context: Context, attrs: AttributeSet) : AppCompatTextView(context, attrs) {
 
     var normalColor: Int = context.resources.getColor(R.color.def_colorable_normal_color)
     var pressedColor: Int = context.resources.getColor(R.color.def_colorable_pressed_color)
-    private val spanMethod = ColorAbleSpanMethod.getInstance(pressedColor, ColorAbleSpanMethod.MODE_ROUND)
-
     init {
         val typedArray = context.obtainStyledAttributes(attrs, R.styleable.ColorAbleTextView)
         normalColor = context.resources.getColor(typedArray.getResourceId(R.styleable.ColorAbleTextView_normal_color, R.color.def_colorable_normal_color))
         pressedColor = context.resources.getColor(typedArray.getResourceId(R.styleable.ColorAbleTextView_pressed_color, R.color.def_colorable_pressed_color))
         typedArray.recycle()
+    }
+    private val spanMethod = ColorAbleSpanMethod.getInstance(pressedColor, ColorAbleSpanMethod.MODE_TEXT)
+
+    fun setColorPressedMode(mode: Int) {
+        spanMethod.mode = mode
+        invalidate()
     }
 
     override fun setText(text: CharSequence?, type: BufferType?) {
