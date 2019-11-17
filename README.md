@@ -1,9 +1,9 @@
 # ColorAbleSpan
 仿微博/微信朋友圈文字点击变色实现：
 
-![img](https://github.com/gfzy9876/ColorAbleSpan/blob/master/preview/preview1.png)
+![img](https://github.com/gfzy9876/ColorAbleSpan/blob/master/previews/preview1.png)
 
-![img](https://github.com/gfzy9876/ColorAbleSpan/blob/master/preview/preview2.png)
+![img](https://github.com/gfzy9876/ColorAbleSpan/blob/master/previews/preview2.png)
 
 使用如下：
 
