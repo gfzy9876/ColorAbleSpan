@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <pers.zy.colorable_lib.ColorableTextView
+        android:id="@+id/tv_color_able"
+        android:layout_width="wrap_content"
+        android:text="#今天发一张最美自拍照#我能亲口跟你说早安吗，先亲口再早安"
+        android:textSize="20sp"
+        android:layout_marginTop="12dp"
+        android:textColor="@android:color/black"
+        android:layout_height="wrap_content"/>
+
+</FrameLayout>
